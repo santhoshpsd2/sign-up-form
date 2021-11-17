@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  
+</head>
+<body>
+<main>
+  <section class="title">
+    <h1>
+  Learn to code by watching others
+</h1>
+<p class="description">
+  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+</p>
+</section>
+<section class="right">
+<section class="freecard">
+ <p> <span class="free"> Try it free 7 days </span> then $20/mo. thereafter </p>
+</section>
+  
+<section class="formsec">
+  <form action="#" name="signupform" class="signup" onsubmit="return validateform()">
+    <input type="text" name="first" placeholder="First Name ">
+    <p class="errormess first">First name cannot be empty <span class="erroricon"> <img src="./images/icon-error.svg" alt=""></span></p>
+    <input type="text" name="last" placeholder="Last Name">
+    <p class="errormess last">Last name cannot be empty <span class="erroricon"> <img src="./images/icon-error.svg" alt=""></span></p>
+    <input type="text" name="email" placeholder="Email Address">
+    <p class="errormess email">Email cannot be empty <span class="erroricon"> <img src="./images/icon-error.svg" alt=""></span></p>
+    <input type="password" name="password" placeholder="Password">
+    <p class="errormess password">password cannot be empty <span class="erroricon"> <img src="./images/icon-error.svg" alt=""></span></p>
+    <button class="submitbutton" type="submit">Claim your free trial</button>
+  </form>
+<p class="terms">By clicking the button, you are agreeing to our <span class="termspan">Terms and Services </span></p>
+</section>
+</section>
+  </main>
+  
+</body>
+<script src="./script.js"></script>
+</html>
